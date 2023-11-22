@@ -51,6 +51,7 @@
     "isexe": "^2.0.0",
     "isobject": "^3.0.1",
     "jest-worker": "^27.5.1",
+    "joi": "^17.11.0",
     "json-parse-even-better-errors": "^2.3.1",
     "json-schema-traverse": "^0.4.1",
     "kind-of": "^6.0.3",
@@ -102,7 +103,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "build-log": "npm run build 2>&1 | tee build_errors.txt"
+    "build-log": "npm run build 2>&1 | tee build_errors.txt",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
