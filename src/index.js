@@ -12,7 +12,6 @@ app.use(jsonParserMiddleware);
 
 //apply middleware for /users route
 app.use('/users', (req, res, next) => {
-  console.log(req.body, "sDASD")
   const validationResult = userschema.validate(req.body)
 
   if (!validationResult.error) {
